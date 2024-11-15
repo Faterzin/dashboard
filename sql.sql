@@ -16,8 +16,8 @@
 
 
 -- Copiando estrutura do banco de dados para useunnica
-CREATE DATABASE IF NOT EXISTS `useunnica` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
-USE `useunnica`;
+CREATE DATABASE IF NOT EXISTS `faterzindash` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
+USE `faterzindash`;
 
 -- Copiando estrutura para tabela useunnica.clientes
 CREATE TABLE IF NOT EXISTS `clientes` (
