@@ -1,6 +1,6 @@
 Versão em português:
 
-Este site foi desenvolvido para uma empresa de vestimenta e é um sistema interno para organização de stock, funcionários e cadastro de clientes. Preferi faze-lo em modelo web (site) devida a praticidade de acesso por dispositivos móveis. Eu fui apenas o programador Back-and deste projeto, ao front-end dou créditos ao meu grande amigo Luis Miguel Bandeira (Instagram para contato: @eaeluis_xs) e a alguns modelos de suporte disponíveis pela internet.Atualmente encontra-se na versão 0.7.12 e pretendo mexer e melhorar muitas coisas ainda.
+Este site foi desenvolvido para uma empresa de vestimenta e é um sistema interno para organização de stock, funcionários e cadastro de clientes. Preferi faze-lo em modelo web (site) devida a praticidade de acesso por dispositivos móveis. Eu fui apenas o programador Back-and deste projeto, ao front-end dou créditos ao meu grande amigo Luis Miguel Bandeira (Instagram para contato: @eaeluis_xs) e a alguns modelos de suporte disponíveis pela internet. Atualmente encontra-se na versão 0.7.12 e pretendo mexer e melhorar muitas coisas ainda.
 
 English version:
 
