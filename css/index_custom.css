@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+  --cor-primaria--:#dc9474 ;
+  --cor-secundaria--:#f1e8dc ;
+  --cor-2--:rgb(238, 216, 196) ;
+  --cor-terciaria--:#522a18;
+  --cor-4--:#594136;
+  --cor-das-letras--:#6e361d ;
+  --cor-do-icone--:#a1291b;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif, Arial, Helvetica;
+}
+
+body{
+   height: 100%;
+}
+
+/* Header */
+
+.navbar{
+  padding: 20px 5%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  position: sticky;
+  top: 0%;
+  z-index: 999;
+  background-color: var(--cor-primaria--);
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+.menu-btn{
+  color: var(--cor-das-letras--);
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar .logo a {
+  text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.navbar .logo a h1 {
+  color: var(--cor-4--);
+  border-bottom: 3px solid var(--cor-do-icone--);
+  font-size: 35px; /* Corrigido o ponto e vírgula */
+  margin: 10px; /* Remove margens padrão do h1 */
+  padding: 0;
+  
+}
+
+
+
+/* Remove o sublinhado de todos os links dentro da navbar */
+.navbar a {
+  text-decoration: none; /* Remove o sublinhado de todos os links */
+  color: inherit; /* Herdar a cor, se quiser manter a cor global */
+}
+
+.navbar .menu a:hover,
+.navbar .login a:hover {
+  color: var(--cor-terciaria--); /* Cor ao passar o mouse (opcional) */
+}
+
+/* Estilos adicionais para organização e responsividade */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar .menu, 
+.navbar .login {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .menu li, 
+.navbar .login li {
+  margin: 10px;
+}
+
+.navbar .menu li, 
+.navbar .login li.hover {
+  
+}
+
+
+/* Customizando a barra de pesquisa */
+.search-bar {
+  width: 100%; /* Faz a barra ocupar 100% da largura disponível */
+  max-width: 600px; /* Limita a largura máxima a 600px */
+  margin: 5px;
+  background-color: var(--cor-secundaria--); /* Cor de fundo */
+  border: none;
+  color: var(--cor-das-letras--); /* Cor do texto */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 15px; /* Espaçamento interno */
+  box-sizing: border-box; /* Inclui o padding dentro da largura */
+}
+
+/* Ao focar na barra de pesquisa */
+.search-bar:focus {
+  outline: none; /* Remove o contorno padrão */
+  border-color: var(--cor-primaria--); /* Muda a cor da borda ao focar */
+  box-shadow: 0 0 5px rgba(220, 148, 116, 0.5); /* Efeito de sombra ao focar */
+  border: none;
+}
+
+/* Customizando o botão */
+.btn-outline-custom {
+  background-color: var(--cor-4--); /* Cor de fundo personalizada */
+  border: none; /* Remove a borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  color: var(--cor-secundaria--); /* Cor do ícone/texto do botão */
+  padding: 10px 15px; /* Aumenta o tamanho do botão */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.material-symbols-outlined {
+  font-size: 24px; /* Aumenta o tamanho do ícone */
+}
+
+/* Torna a barra de pesquisa responsiva */
+@media (max-width: 768px) {
+  .search-bar {
+    width: 100%; /* Ocupa toda a largura da tela em dispositivos menores */
+    max-width: none; /* Remove a limitação de largura máxima */
+  }
+
+  .btn-outline-custom {
+    padding: 8px 12px; /* Ajusta o espaçamento para telas menores */
+  }
+}
+
+
+.btn-outline-custom:hover {
+  background-color: var(--cor-primaria--); /* Muda a cor de fundo no hover */
+  color: var(--cor-secundaria--); /* Mantém a cor do ícone/texto no hover */
+}
+
+
+.navbar .menu li{
+  line-height:none;
+  display: inline-block;
+}
+
+.navbar .menu li a{
+  display: block;
+  margin-left: 50px;
+  color:var(--cor-das-letras--);
+  border-bottom:2px solid transparent;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar .login li a{
+  display: block;
+  margin-left: 15px;
+  color:var(--cor-secundaria--);
+  border-bottom:2px solid transparent;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.navbar .login li .active{
+  border-bottom: 3px solid var(--cor-do-icone--);
+}
+
+.navbar .menu li a i{
+  color:var(--cor-do-icone--) ;
+}
+
+.navbar .menu li .active{
+  border-bottom: 3px solid var(--cor-do-icone--);
+}
+
+.navbar .menu li a:hover{
+  border-bottom: 3px solid var(--cor-do-icone--)
+}
+
+/* Botão de Login com Ícone */
+.login-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--cor-primaria--); /* Usando cor primária */
+  color: var(--cor-secundaria--); /* Usando cor secundária */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative; /* Para posicionar o dropdown */
+}
+
+.login-button img {
+  margin-right: 10px;
+  width: 20px;
+}
+
+.login-button .arrow {
+  margin-left: 5px;
+  transition: transform 0.3s;
+}
+
+.login-button:hover .arrow {
+  transform: rotate(180deg);
+}
+
+/* Estilo do Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--cor-secundaria--);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: var(--cor-das-letras--);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--cor-primaria--);
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--cor-primaria--);
+  color: var(--cor-secundaria--);
+}
+
+/* Exibir o Dropdown ao passar o mouse */
+.login-button:hover .dropdown-content {
+  display: block;
+}
+
+
+/*Content*/
+
+.content{
+  background-image: url(../images/fundo.png);
+  /*background: var(--cor-2--);*/
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center ;
+  align-items: flex-start;
+  color: var(--cor-terciaria--);
+  height:100vh ;
+}
+
+.content h1{
+  font-size: 60px;
+}
+
+.content p{
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+
+.content a {
+  text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.content button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  border: none;
+  background: var(--cor-do-icone--);
+  color: var(--cor-secundaria--);
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Transição suave */
+}
+
+.content a button:hover {
+  transform: scale(1.2); /* Aproximação no hover */
+  color: var(--cor-primaria--); /* Muda a cor do texto no hover */
+}
+
+
+
+
+/*pheading*/
+
+.pheading {
+  text-align: center;
+  margin: 30px 0;
+  color: var(--cor-das-letras--);
+}
+
+
+/*Produtos*/
+
+.sec{
+  padding: 2% 5%;
+}
+
+.products{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.products .card{
+  width: 300px;
+  background-color: var(--cor-secundaria--);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.products .card img{
+  height: 250px;
+  width: 90%;
+}
+
+.products .card .desc{
+  padding: 5px 20px;
+  opacity: 0.8;
+  
+}
+
+.products .card .title{
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--cor-4--);
+  padding: 0 20px;
+}
+
+
+.products .card .box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.products .card .box .price{
+  color: var(--cor-do-icone--);
+  font-size: 20px;
+  font-weight: bold;  
+}
+
+.products .card .box .btn{
+  font-size: 13px;
+  color: var(--cor-do-icone--);
+  padding: 10px 18px;
+  font-weight: 900;
+  border: 1px solid var(--cor-do-icone--);
+  border-radius: 20px;
+}
+
+.products .card .box .btn:hover{
+  cursor: pointer;
+  background-color: var(--cor-do-icone--);
+  color: var(--cor-secundaria--);
+}
+
+/*footer*/
+
+footer{
+  background-color: var(--cor-secundaria--);
+  height: 28vh;
+}
+
+footer p{
+  text-align: center;
+  line-height: 10vh;
+}
+
+footer p a{
+  text-decoration: none;
+  color: var(--cor-do-icone--);
+  font-weight: bold;
+}
+
+
+
+
+
+

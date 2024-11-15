@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ffbea4;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 30px;
+    color: #a04825;
+}
+
+.textbox {
+    margin: 20px 0;
+    position: relative;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    background: rgba(4, 4, 4, 0.1);
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #f9a381;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f9885b;
+}
+
+.register-link {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.register-link a {
+    color: #fff;
+    text-decoration: underline;
+}
+ 
+.login-container .login-box .botao {
+    width: 90%;
+    padding: 20px;
+    background-color: #f9a381;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #f9885b;
+}
